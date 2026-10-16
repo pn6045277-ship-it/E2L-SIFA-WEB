@@ -29,27 +29,45 @@
       </div>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">What We Do</a></li>
         <li><a href="#">Opportunities</a></li>
         <li><a href="#">Impact and Stories</a></li>
         <li><a href="#">Get Involved</a></li>
         <li><a href="#" id="no_margin">Contact</a></li>
       </ul>
-      <ul>
-        <!-- <li><a href="#"><i class="fa-regular fa-house"></i>Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-circle-info"></i>About</a></li>
-        <li><a href="#"><i class="fa-solid fa-layer-group"></i>What We Do</a></li>
-        <li><a href="#"><i class="fa-solid fa-door-open"></i>Opportunities</a></li>
-        <li><a href="#"><i class="fa-solid fa-arrow-up-right-dots"></i>Impact and Stories</a></li>
-        <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>Get Involved</a></li>
-        <li><a href="#" id="no_margin"><i class="fa-solid fa-phone"></i>Contact</a></li> -->
-      </ul>
+
       <div class="donate-link">
-        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+        <!-- <i class="fa-solid fa-magnifying-glass" id="search"></i> -->
         <a href="#"><i class="fa-solid fa-heart"></i>Donate</a>
+        <button onclick="showSdebar()"><i class="fa-solid fa-bars"></i></i></button>
+      </div>
+      
+
+      <div class="side_bar">
+        <div class="top-logo-side">
+          <div class="logo">
+            <img src="pictures/logo_picture.png" alt="E2I logo" loading="lazy">
+
+            <header>
+              <h1 class="web_name">E2I</h1>
+              <p class="web_name">Educate 2 Impact</p>
+            </header>
+          </div>
+          <button onclick="hideSdebar()"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <ul id="vertical-link">
+          <li><a href="#"><i class="fa-regular fa-house"></i>Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-circle-info"></i>About</a></li>
+          <li><a href="#"><i class="fa-solid fa-layer-group"></i>What We Do</a></li>
+          <li><a href="#"><i class="fa-solid fa-door-open"></i>Opportunities</a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-up-right-dots"></i>Impact and Stories</a></li>
+          <li><a href="#"><i class="fa-solid fa-hand-holding-heart"></i>Get Involved</a></li>
+          <li><a href="#" id="no_margin"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ul>
       </div>
     </div>
+
   </nav>
   <main>
     <div class="hero_top">
@@ -223,14 +241,6 @@
             <img src="pictures/sifa (5).jpg" alt="students picture">
             <img src="pictures/sifa.jpg" alt="students picture">
           </marquee>
-          <marquee behavior="scroll" direction="right" scrollamount="1">
-            <img src="pictures/sifa (1).jpg" alt="students picture">
-            <img src="pictures/sifa (2).jpg" alt="students picture">
-            <img src="pictures/sifa (3).jpg" alt="students picture">
-            <img src="pictures/sifa (4).jpg" alt="students picture">
-            <img src="pictures/sifa (5).jpg" alt="students picture">
-            <img src="pictures/sifa.jpg" alt="students picture">
-          </marquee>
         </section>
       </section>
       <hr>
@@ -271,6 +281,7 @@
       </div>
     </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>

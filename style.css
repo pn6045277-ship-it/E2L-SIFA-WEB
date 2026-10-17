@@ -685,7 +685,7 @@ body {
 
 .featured-card {
   display: flex;
-  /* width: 500px; */
+  width: 50%;
   gap: 30px;
   background-color: hsl(216, 96%, 90%);
   border-radius: 10px;
@@ -714,7 +714,7 @@ body {
 .featured_story .partners {
   background-color: hsl(216, 96%, 90%);
   padding: 10px 20px;
-  /* width: 500px; */
+  width: 40%;
   border-radius: 10px;
 }
 
@@ -724,13 +724,14 @@ body {
 }
 
 .featured_story .partners img {
-  width: 70px;
+  width: 50px;
   max-height: 50px;
   border-radius: 20%;
 }
 
-.featured_story .partners h4 {
+.featured_story .partners p {
   color: hsl(240, 98%, 10%);
+  font-size: 0.9rem;
 }
 
 /* footer styling  */
@@ -754,7 +755,7 @@ footer .gallery_section {
 }
 
 footer .gallery_section marquee {
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 footer .gallery_section img {
@@ -922,6 +923,9 @@ footer .gallery_section img {
   }
 
   /* cards styling */
+  .gap-container {
+    padding: 20px;
+  }
 
   .gap-container .gap-cards {
     min-width: 100%;
@@ -937,13 +941,24 @@ footer .gallery_section img {
 
   /* HOW WE WORK  */
 
+  .how-section {
+    padding: 30px;
+  }
+
+  .how-we-work-container {
+    gap: 30px;
+  }
 
   .how-we-work-container .how-we-work-card1 {
     border-right: none;
     border: 1px solid orange;
     padding-top: 10px;
     border-radius: 10px;
+    width: 45%;
+  }
 
+  .how-we-work-container .how-we-work-card1 p {
+    font-size: 1rem;
   }
 
   #no-border {
@@ -951,17 +966,23 @@ footer .gallery_section img {
   }
 
   /* LEARN NOW SECTION */
+  .learn-now {
+    margin: 30px;
+  }
 
   .learn-txt p {
-    width: 70%;
+    width: 80%;
   }
 
   /* I AM buttons  */
+  .buttons-section {
+    padding: 30px;
+  }
 
   .buttons-container button {
     width: 100%;
-    padding: 20px;
-    font-size: 1.5rem;
+    padding: 10px;
+    font-size: 1.2rem;
   }
 
   /* FEATURED STORY  */
@@ -971,6 +992,10 @@ footer .gallery_section img {
     margin-bottom: 30px;
   }
 
+  .featured .featured-card {
+    min-width: 100%;
+  }
+
   .featured .partners {
     min-width: 100%;
     padding-bottom: 20px;
@@ -978,12 +1003,18 @@ footer .gallery_section img {
 
   /* MARQUEE STYLE */
 
-  #marquee2 {
-    display: none;
+  footer .moments {
+    padding: 10px;
+    margin: 0;
   }
 
   .nav-links-footer-container {
     justify-content: center;
+  }
+
+  .social-media {
+    margin-top: 30px;
+    text-align: center;
   }
 
   .nav-links-footer-container ul {
@@ -1028,7 +1059,7 @@ footer .gallery_section img {
   }
 
   .gap-container .gap-cards p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .gap-container .gap-cards img {
@@ -1119,49 +1150,106 @@ footer .gallery_section img {
 
   /* OUR PARTNERS */
 
-  .partners .logos h4{
+  .partners .logos h4 {
     font-size: 0.7rem;
   }
-  .partners .logos img{
+
+  .partners .logos img {
     width: 40px;
   }
 
   /* Footer styles */
 
-  footer .moments{
+  footer .moments {
     margin: 0;
     padding: 20px;
   }
+
   .moments h1 {
     font-size: 1.4rem;
   }
-  .moments p{
+
+  .moments p {
     font-size: 0.8rem;
   }
+
   /* LOGO PART FOOTER */
-  .Quick_links_container{
+  .Quick_links_container {
     margin: 0;
     padding: 30px;
   }
-  .call_details{
+
+  .call_details {
     margin-bottom: 40px;
     margin-top: 30px;
   }
-  .social-media i{
+
+  .social-media i {
     font-size: 1rem;
     width: 15px;
   }
 
   /* links  */
-  .nav-links-footer-container{
+  .nav-links-footer-container {
     margin: 0;
     padding: 20px;
   }
-  .nav-links-footer-container ul li a{
+
+  .nav-links-footer-container ul li a {
     font-size: 0.9rem;
   }
-  .nav-links-footer-container p{
+
+  .nav-links-footer-container p {
     font-size: 0.9rem;
+  }
+}
+
+@media(max-width: 375px) {
+  .gap-container {
+    padding: 5px;
+  }
+
+  .gap-container .gap-cards a {
+    font-size: 0.8rem;
+  }
+
+  .two_pathway .card1 a {
+    font-size: 0.9rem;
+  }
+
+  .two_pathway .card2 a {
+    font-size: 0.9rem;
+  }
+
+  .how-section {
+    padding: 10px;
+  }
+
+  .how-section .how-we-work-container .how-we-work-card1 {
+    min-width: 100%;
+  }
+
+  .learn-now .learn-txt h2{
+    font-size: 1.1rem;
+  }
+
+  footer .moments {
+    padding: 10px;
+  }
+
+  footer .moments h1 {
+    font-size: 1.1rem;
+  }
+
+  .nav-links-footer-container{
+    justify-content: left;
+  }
+
+  .nav-links-footer-container ul {
+    flex-direction: column;
+  }
+  .nav-links-footer-container ul li a{
+    font-size: 1rem;
   }
 }
 

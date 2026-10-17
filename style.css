@@ -1208,6 +1208,9 @@ footer .gallery_section img {
   .gap-container {
     padding: 5px;
   }
+  .gap-container .gap-cards h2{
+    font-size: 0.8rem;
+  }
 
   .gap-container .gap-cards a {
     font-size: 0.8rem;
